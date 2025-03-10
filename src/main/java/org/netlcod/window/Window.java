@@ -6,7 +6,9 @@ public class Window {
     /**
      * Generates a Bartlett (triangular) window.
      *
-     * @param size Size of the window.
+     * @param size    Size of the window.
+     * @param fftbins If true, create a periodic window for use with FFT.
+     *                If false, create a symmetric window for filter design applications.
      * @return An array representing the Bartlett window.
      */
     public static double[] bartlett(int size, boolean fftbins) {
@@ -26,6 +28,8 @@ public class Window {
      * Generates a Blackman window.
      *
      * @param size Size of the window.
+     * @param fftbins If true, create a periodic window for use with FFT.
+     *                If false, create a symmetric window for filter design applications.
      * @return An array representing the Blackman window.
      */
     public static double[] blackman(int size, boolean fftbins) {
@@ -46,6 +50,8 @@ public class Window {
      * Generates a Hamming window.
      *
      * @param size Size of the window.
+     * @param fftbins If true, create a periodic window for use with FFT.
+     *                If false, create a symmetric window for filter design applications.
      * @return An array representing the Hamming window.
      */
     public static double[] hamming(int size, boolean fftbins) {
@@ -64,6 +70,8 @@ public class Window {
      * Generates a Hanning (Hann) window.
      *
      * @param size Size of the window.
+     * @param fftbins If true, create a periodic window for use with FFT.
+     *                If false, create a symmetric window for filter design applications.
      * @return An array representing the Hanning window.
      */
     public static double[] hann(int size, boolean fftbins) {
@@ -80,6 +88,8 @@ public class Window {
      * Generates a Welch window.
      *
      * @param size Size of the window.
+     * @param fftbins If true, create a periodic window for use with FFT.
+     *                If false, create a symmetric window for filter design applications.
      * @return An array representing the Welch window.
      */
     public static double[] welch(int size, boolean fftbins) {
@@ -98,6 +108,8 @@ public class Window {
      *
      * @param windowName Name of the window.
      * @param size       Size of the window.
+     * @param fftbins If true, create a periodic window for use with FFT.
+     *                If false, create a symmetric window for filter design applications.
      * @return An array representing the Welch window.
      */
     public static double[] getWindow(String windowName, int size, boolean fftbins) {
