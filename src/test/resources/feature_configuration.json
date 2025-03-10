@@ -1,0 +1,7 @@
+{
+  "sampleRate": 16000,
+  "nFft": 1024,
+  "hopLength": 512,
+  "nMels": 64,
+  "nMfcc": 9
+}
